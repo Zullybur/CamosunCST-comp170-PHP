@@ -21,6 +21,12 @@ function getQuery($queryString) {
     // Connect to database and verify connection
     (mysqli_select_db($LinkID, $dbID)) or exit("Unable to connect to database.<br>\n".mysqli_error($LinkID));
     // Query database and return result
-    return mysqli_query($LinkID, $queryString);
+    $result = mysqli_query($LinkID, $queryString);
+    $i = 0;
+    while($x = mysqli_fetch_assoc($result)) {
+        $resultArray[$i] = $x;
+        $i++;
+    }
+    return $resultArray;
 }
 ?>

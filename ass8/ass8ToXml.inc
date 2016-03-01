@@ -18,7 +18,7 @@
 */
 
 // Convert input array to XML
-function toXml($queryObject) {
+function toXml($queryResults) {
     $dom = new DomDocument("1.0", "ISO-8859-15");
     // Create root node
     $root = $dom->createElement('root');
@@ -28,10 +28,11 @@ function toXml($queryObject) {
     $root->appendChild($query);
     // Create entry nodes as child of query containing 
     // key value pairs for one row per entry
-    while($rowArray=mysqli_fetch_assoc($queryObject)) {
+
+    foreach($queryResults as $x) {
         $entry = $dom->createElement('entry');
         $query->appendChild($entry);
-        foreach($rowArray as $key => $val) {
+        foreach($x as $key => $val) {
             $rowElem = $dom->createElement($key, $val);
             $entry->appendChild($rowElem);
         }
