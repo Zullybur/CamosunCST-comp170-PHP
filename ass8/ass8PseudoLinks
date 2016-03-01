@@ -1,0 +1,50 @@
+Lab Number: 8
+Program Name: Pseudo Code and Assignment Links
+Author Name: Matthew Casiro
+Author Email: mattcasiro@gmail.com
+Submission Date: TODO
+Est. Time to Complete: 7 hours
+Act. Time to Complete: TODO
+How to Run Program: navigate to:
+   http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass8/
+
+PURPOSE:
+    Implement user input to database query and results display in
+    an MVC structure using XML/XSL and MySQL
+
+MODEL:
+    Include file with database specific information or exit
+
+    Connect to server and verify connection
+
+    Connect to database and verify connection
+
+    Query database and return result
+
+CONTROLLER:
+    Include Model and XML creation files or exit
+
+    Sanitize and validate input or exit if POST is null
+
+    Request output from model
+
+    Convert output to XML and send to View
+
+VIEW:
+    XML (convert input array to XML):
+        Create root node
+
+        Create query node for query result
+
+        Create entry node as row of result
+
+        Create field node as child of entry for column labels
+
+        Create entry node as child of entry for column data
+
+    XSL:
+        Create table to display query results
+
+        Output field names
+
+        Output column names
