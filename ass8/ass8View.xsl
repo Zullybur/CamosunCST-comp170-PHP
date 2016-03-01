@@ -14,11 +14,11 @@ How to Run Program: navigate to:
 <xsl:template match="/">
 <html>
     <head>
-        <title>170 assignment 5-2</title>
+        <title>170 assignment 8</title>
         <link href="form.css" rel="stylesheet" />
     </head>
     <body>
-        <form action="?" method="post">
+        <form action="ss8Controller.php" method="post">
             <div class="row">
                 <div class="left_col">
                     <label>SELECT</label>

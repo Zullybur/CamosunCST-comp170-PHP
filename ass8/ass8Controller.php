@@ -49,8 +49,10 @@ if($where && $whereCondition) {
 }
 // Request output from model
 $result = getQuery($queryString);
-// Convert output to XML and send to View
+// Convert output to XML and close query
 $xmlResult = toXml($result);
+closeQuery();
+// Send to View
 header('Content-Type: text/xml');
 echo $xmlResult;
 ?>

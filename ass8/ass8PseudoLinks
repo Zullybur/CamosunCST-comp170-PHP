@@ -34,7 +34,9 @@ CONTROLLER:
 
     Request output from model
 
-    Convert output to XML and send to View
+    Convert output to XML and close query
+
+    Send to view
 
 VIEW:
     XML (convert input array to XML):
@@ -42,11 +44,9 @@ VIEW:
 
         Create query node for query result
 
-        Create entry node as row of result
+        Create entry nodes as child of query containing key value pairs for one row per entry
 
-        Create field node as child of entry for column labels
-
-        Create entry node as child of entry for column data
+        Format output, create and return XML file
 
     XSL (define view port layout and structure):
         Create table to display query results
