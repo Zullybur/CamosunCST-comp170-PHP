@@ -12,7 +12,7 @@
 //      deepblue.cs.camosun.bc.cs/~cst583/comp170/ass8/
 
 // Include Model and XML creation files or exit
-((require_once 'ass8Model.inc') && (require_once 'toXML.inc')) || exit("Unable to load Model or View.<br>\n");
+((require_once 'ass8Model.inc') && (require_once 'ass8ToXml.inc')) || exit("Unable to load Model or View.<br>\n");
 // Validate input or exit if POST is null
 if(!$_POST) {
     exit();

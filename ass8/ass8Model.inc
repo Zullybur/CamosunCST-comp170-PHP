@@ -21,3 +21,7 @@ function getQuery($queryString) {
     // Query database and return result
     return mysqli_query($LinkID, $queryString);
 }
+function closeQuery() {
+    mysqli_close($LinkID);
+}
+?>

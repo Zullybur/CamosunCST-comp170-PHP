@@ -48,7 +48,7 @@ VIEW:
 
         Create entry node as child of entry for column data
 
-    XSL:
+    XSL (define view port layout and structure):
         Create table to display query results
 
         Output field names
