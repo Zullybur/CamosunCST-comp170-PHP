@@ -1,0 +1,76 @@
+div.row {
+    display: block;
+    clear: both;
+    width: 100%;
+}
+div.left_col {
+    clear: left;
+    float: left;
+    width: 20%;
+    text-align: right;
+}
+div.right_col {
+    float: left;
+    clear: right;
+    margin-top: 4px;
+    margin-bottom: 3px;
+    margin-left: 2%;
+    width: 60%;
+    text-align: left;
+}
+div.right_col_submit {
+    float: left;
+    clear: right;
+    margin-top: 4px;
+    margin-bottom: 3px;
+    margin-left: 22%;
+    width: 48%;
+    text-align: center;
+}
+div.right_col2 {
+    float: left;
+    margin-top: 4px;
+    margin-bottom: 3px;
+    margin-left: 2%;
+    text-align: left;
+    width: 20%;
+}
+div.right_col3 {
+    float: left;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    width: 8%;
+    text-align: center;
+}
+div.right_col4 {
+    margin-top: 4px;
+    margin-bottom: 3px;
+    float: left;
+    clear: right;
+    width: 20%;
+    text-align: center;
+}
+label {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+input {
+    display: inline-block;
+    width: 80%;
+    margin: 0 auto;
+    vertical-align: middle;
+    height: 2em;
+    -moz-box-sizing:border-box;
+}
+input.split {
+    width: 100%;
+    vertical-align: middle;
+    height: 2em;
+    -moz-box-sizing:border-box;
+}
+input.button {
+    clear: both;
+    width: 25%;
+    font-weight: 800;
+    background-color: #00b300;
+    -moz-box-sizing:border-box;
