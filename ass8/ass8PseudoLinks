@@ -24,7 +24,13 @@ MODEL:
 CONTROLLER:
     Include Model and XML creation files or exit
 
-    Sanitize and validate input or exit if POST is null
+    Validate input or exit if POST is null
+
+    Sanitize input against any malicious code
+
+    Exit if forbidden terms detected
+
+    Prepare query string for submission to model
 
     Request output from model
 
