@@ -1,0 +1,37 @@
+Lab Number: 4
+Program Name: Links and Psuedo Code
+Author Name: Matthew Casiro
+Author Email: mattcasiro@gmail.com
+Submission Date: 03 Feb 2016
+Est. Time to Complete: 2.5 hrs
+Act. Time to Complete: 7.5 hrs 
+
+LINKS:
+    HTML: http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass4/ass4.html
+    PHP: http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass3/ass4.php
+
+PURPOSE:
+    Take an Apache log file submitted via a web form, parse out and display the bytes transmitted for all successful transmissions (2xx range).
+
+PSUEDO CODE:
+    HTML:
+        Display form with radio buttons to chooses from available log files.
+        
+	Order values based on lag file array (wk 0, wk3, wk2, wk1)
+
+	Submit to 'ass4.php' using method POST.
+
+    PHP:
+        Acquire and clean user choice from POST
+
+        Open specified log file with read permissions for parsing
+        
+        Parse IP - Byte combinations to array with IP key and Byte value pairs
+        
+        Only retain successful transmission (2xx status code)
+
+        If bytes transmitted is null, set to zero
+
+        Aggregate bytes for repeated IP addresses
+
+        Output totals for each IP address to screen, where bytes > 0 (no sort required)

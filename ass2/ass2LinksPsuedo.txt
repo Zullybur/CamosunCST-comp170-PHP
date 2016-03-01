@@ -1,0 +1,35 @@
+Lab Number: 2
+Program Name: Links and Psuedo Code
+Author Name: Matthew Casiro
+Author Email: mattcasiro@gmail.com
+Submission Date: Jan 19 2016 (resubmit)
+
+
+LINKS:
+Part A: http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass2/ass2a.php?name=Deid%20Reimer
+Part B: http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass2/ass2b.html
+
+Part A Psuedo Code:
+// Display Hello World to screen
+
+// Display name to string from address bar Query String
+
+// Display the current time in SI standard (yyy-mm-dd hh:mm)
+
+// Display horizontal black bars across screen with
+// blue bar indicating % of day completed based on time
+
+// Display the type of browser being used to display page
+
+
+Part B Psuedo Code:
+// Generate an HTML form (method: POST) to take two values 
+// from a user and a calculation type (select)
+
+// Retrieve values and operator from $_POST
+
+// Perform operation per user inputs
+
+// Output result
+
+// Provide link back to form

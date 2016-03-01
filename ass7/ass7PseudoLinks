@@ -1,0 +1,38 @@
+Lab Number: 7
+Program Name: Pseudo Code and Assignment Links
+Author Name: Matthew Casiro
+Author Email: mattcasiro@gmail.com
+Submission Date: Feb 23rd 2016
+Est. Time to Complete: 12 hours
+Act. Time to Complete: 15 hours
+How to Run Program: navigate to:
+   http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass7/
+
+PURPOSE:
+    Display three canvases with multiple iterations of one shape per canvas
+
+PSEUDO CODE
+    HTML:
+        Purpose: Draw shapes using drawMe.php and a parameter passed as "Query String"
+
+        Call drawMe.php for each shape, adjusting the query string each time.
+
+    MAIN:
+        Purpose: Create objects, move shapes around canvas, and print out results.
+        
+        Require the file containing the image drawing functions
+
+        Get object choice from calling page and create appropriate object
+
+        Move around and resize shape, drawing it on the canvas multiple times
+
+        Output reulting image back to calling source
+
+    OBJECTS:
+        Create a class for each shape with private fields for use as object properties
+
+        In each class, provide a constructor to initialize the object with a canvas and shape
+
+        Create methods to move around and resize the shapes
+
+        Create methods to draw the shapes to canvas, and output the canvas to buffer when complete

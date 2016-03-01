@@ -1,0 +1,42 @@
+<html>
+   <head>
+      <meta name="author" content="Matthew Casiro" />
+      <title>Basic Calc</title>
+
+      <!-- 
+      Lab Number: 2b
+      Program Name: Basic Calculator Form
+      Author Name: Matthew Casiro
+      Author Email: mattcasiro@gmail.com
+      Submission Date: Jan 19 2016 (resubmit)
+      Est. Time to Complete: 0.33 hrs
+      Act. Time to Complete: 0.5 hrs
+      Program Description: Basic HTML form to input values and operator to calculate
+      How to Run Program: Enter first and second values and select an operator,
+         then hit '=' button
+      Files Required to Run: ass2b.html, ass2b.php
+      -->
+   </head>
+   <body>
+      <!--  Generate an HTML form (method: POST) to take two values 
+            from a user and a calculation type (select) -->
+      <form method="post" action="ass2b.php">
+         <p><label>First Value: </label>
+            <input type="number" step="any" name="firstValue" size="10" required/>
+         </p>
+         <p><label>Operation: </label>
+            <select name="operation">
+               <option value="+">+</option>
+               <option value="-">-</option>
+               <option value="*">*</option>
+               <option value="/">/</option>
+               <option value="**">**</option>
+            </select>
+         </p>
+         <p><label>Second Value: </label>
+            <input type="number" step="any" name="secondValue" size="10" required/>
+         </p>
+         <p><input type="submit" value="Calculate" /></p>
+      </form>
+   </body>
+</html>

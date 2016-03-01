@@ -1,0 +1,47 @@
+Lab Number: 3
+Program Name: Links and Psuedo Code
+Author Name: Matthew Casiro
+Author Email: mattcasiro@gmail.com
+Submission Date: Jan 25th 2016
+Est. Time to Complete: 185 mins (3.08 hrs)
+Act. Time to Complete: 138 mins (2.3 hrs)
+
+LINKS:
+   PART 1: /home/student/cst583/public_html/comp170/ass3/regex.php
+   PART 2:
+      FORM: http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass3/ass3.html
+      PHP(B): http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass3/ass3b.php
+      PHP(C): http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass3/ass3c.php
+
+PURPOSE:
+   Parse a web server log file using regular expressions to select and display
+   the IP address and the number of bytes transmitted if the request was
+   successful. If the request failed, then make the number of bytes
+   transmitted 0.
+
+PSUEDO CODE:
+   HTML:
+      Allow data to be submitted in to one of two forms depending on which
+      part of the assignment is being executed
+
+         Form with input text field and submit button that
+         calls ass2b.php
+
+         Form with input text field and submit button that
+         calls ass2c.php
+
+   PHP - Part A:
+      Acquire and clean source string from POST
+
+      Extract and display IP address from source string
+
+      Extract and display result code and bytes transmitted from source string
+      (if request not successful, set bytes to zero)
+
+   PHP - Part B:
+      Clean and acquire source string from POST
+
+      Find: "fear, waddy, gear, fiasco or fobbing",
+      Replace with: "1969-10-29"
+
+      Explain relevance of date: 1969-10-29

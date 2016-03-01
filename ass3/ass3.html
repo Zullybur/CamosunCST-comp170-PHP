@@ -1,0 +1,47 @@
+<html>
+   <!--
+      Allow data to be submitted in to one of two forms depending on which
+      part of the assignment is being executed
+   -->
+   <head>
+   <!--       
+      Lab Number: 3c
+      Program Name: Assingment 3 Submission Forms
+      Author Name: Matthew Casiro
+      Author Email: mattcasiro@gmail.com
+      Submission Date: Jan 25th 2016
+      Est. Time to Complete: 45 mins
+      Act. Time to Complete: 30 mins
+      Program Description: Forms to submit strings to ass3b.php and ass3c.php
+      How to Run Program: Enter a search string in the desired text box and
+         click 'submit'
+      Files Required to Run: ass3.html && (ass3b.php || ass3c.php)
+   -->
+   <title>Comp170 Ass: 3</title>
+   <meta name="author" content="Matthew Casiro" />
+   </head>
+   <body>
+      <br>
+      <!--
+         Form with input text field and submit button that
+         calls ass2b.php
+      -->
+       <form name="PartB" action="ass3b.php" method="post">
+         <p><b>Assignment 3 Part B:</b></p>
+         Enter your log string (BEWARE leading spaces!):<br>
+         <textarea name="sourceString" rows="5" cols="75"></textarea>
+         <input type="submit" value="Submit" style="font-weight: 800; background-color: #00b300" /> 
+      </form>
+      <br><br><br>
+      <!--
+         Form with input text field and submit button that
+         calls ass2c.php
+      -->
+      <form name="PartC" action="ass3c.php" method="post">
+         <p><b>Assignment 3 Part C:</b></p>
+         Enter your text string:<br>
+         <textarea name="sourceString" rows="5" cols="75"></textarea>
+         <input type="submit" value="Submit" style="font-weight: 800; background-color: #00b300" /> 
+      </form>
+   </body>
+</html>

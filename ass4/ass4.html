@@ -1,0 +1,38 @@
+<html>
+    <head>
+    <!--       
+       Lab Number: 4
+       Program Name: Apache Log File Selector Form
+       Author Name: Matthew Casiro
+       Author Email: mattcasiro@gmail.com
+       Submission Date: 03 Feb 2016
+       Est. Time to Complete: 2.5 hrs
+       Act. Time to Complete: 7.5 hrs 
+       Program Description: Web form to select Apache log file
+       How to Run Program: Select an Apache log and submit
+       Files Required to Run: ass4.html, ass4.php
+    -->
+    <title>Comp170 Ass: 4</title>
+        <meta name="author" content="Matthew Casiro" />
+    </head>
+    <body>
+        <br>
+        <!--
+            Display form with radio buttons to chooses from available log files.
+            Submit to 'ass4.php' using method POST. 
+        -->
+        <form action="ass4.php" method="post">
+            <p><b>Assignment 4:</b></p>
+            Please select the log file you would like to parse:<br>
+            <select name="userSelection">
+		<!-- Order values based on lag file array (wk 0, wk3, wk2, wk1) -->
+                <option value=0>Current Log</option>
+                <option value=3>One Week Old Log</option>
+                <option value=2>Two Week Old Log</option>
+                <option value=1>Three Week Old Log</option>
+            </select>
+            <br> 
+            <input type="submit" value="Submit" style="font-weight: 800; background-color: #00b300" /> 
+        </form>
+    </body>
+</html>

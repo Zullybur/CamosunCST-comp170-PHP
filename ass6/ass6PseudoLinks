@@ -1,0 +1,61 @@
+Lab Number: 6
+Program Name: Pseudo Code and Assignment Links
+Author Name: Matthew Casiro
+Author Email: mattcasiro@gmail.com
+Submission Date: Feb 17th 2016
+Est. Time to Complete: 7 hours
+Act. Time to Complete: 5.5 hours
+How to Run Program: navigate to:
+   http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass6/
+
+PURPOSE:
+    Display a square, triangle, and sphere twice each in different colours using
+    one html file to display the results, one php file to call the 'draw' functions,
+    and another file with functions to draw the objects.
+
+PSEUDO CODE
+    HTML:
+        Purpose: Draw shapes using drawMe.php and a parameter passed as "Query String"
+
+        Call drawMe.php twice per shape, adjusting the query string each time.
+
+    MAIN:
+        Purpose: Call functions and output the resulting images.
+        
+        Require the file containing the image drawing functions
+
+        Get object choice from calling page and call appropriate function
+
+    FUNCTIONS:
+        SQUARE:
+            Purpose: Draw a square using provided canvas size, co-ordinates of
+            lower-left corner, and length of one side. Also accepts background
+            and foreground colours as RBG parameters.
+            
+            Create empty image, define background and foreground colours,
+            and fill background
+            
+            Draw a square, write the image, and free up the memory used
+            
+        TRIANGLE:
+            Purpose: Draw a triangle using provided canvas size, co-ordinates of
+            lower-left corner, base, and height. Also accepts background and
+            foreground colours as RBG parameters.
+            
+            Create an empty image, define background and foreground colours,
+            and fill the background
+            
+            Create an array of points using calculations off base and height
+            for a right angle triangle
+            
+            Draw a triangle, write the image, and free up the memory used
+            
+        CIRCLE:
+            Purpose: Draw a circle using provided canvas size, co-ordinates of
+            lower-left corner, and co-ordinates of center. Also accepts background
+            and foreground colours as RBG parameters.
+            
+            Create an empty image, define background and foreground colours,
+            and fill the background
+            
+            Draw a circle, write the image, and free up the memory used

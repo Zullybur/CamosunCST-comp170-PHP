@@ -1,0 +1,54 @@
+Lab Number: 5
+Program Name: Links and Pseudo Code
+Author Name: Matthew Casiro
+Author Email: mattcasiro@gmail.com
+Submission Date: Feb 10 2016
+Est. Time to Complete: 8 hours
+Act. Time to Complete: 10 hours
+
+QUESTIONS:
+   Q: Why is the 'include' file is not in the public_html directory?
+      A: 'Hiding' the file higher in the directory tree makes it harder
+         for 'bad people' to access it. The higher you go in the tree the
+         more permissions are needed to see and access files. Files in the
+         public_html directory are easily accessible.
+
+   Q: Do the queries work in Oracle SQL or SQL/92 or both?
+      A: Oracle SQL queries using outer join notation (+)
+         do not appear to be supported by MySQL. Different
+         syntax is required for MySQL, so these queries have
+         been removed from the code below.
+
+LINKS:
+   http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass5/
+
+PART ONE:
+   PURPOSE:
+      Run provided queries against a database using SQL/92 and Oracle SQL
+      notation.
+
+   PSEUDO CODE:
+      Get SQL login information from file
+
+      Connect to SQL database and confirm connection, or exit gracefully, then
+      select the correct db and confirm selection, or exit gracefully
+
+      Send query one through three to the DB and display results
+
+PART TWO:
+   PURPOSE:
+      Run basic user submitted queries against a database using SELECT, FROM,
+      and WHERE operators.
+
+   PSEUDO CODE:
+      Generate form for user input of SELECT, FROM, and WHERE information
+      where form will call active webpage to display results
+
+      Clean and validate user input
+
+      Get SQL login information from file
+
+      Connect to SQL database and confirm connection, or exit gracefully, then
+      select the correct db and confirm selection, or exit gracefully
+
+      Build query and send to database to display results

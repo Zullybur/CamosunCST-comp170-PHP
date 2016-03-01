@@ -1,0 +1,16 @@
+Matthew Casiro - C0295003 - Assignment 1 - Jan 5th 2016
+
+All files:
+http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass1/submission/
+
+Perl:
+Original: http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass1/submission/ass1perl.cgi?randomstring
+Modified: http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass1/submission/ass1perlmod.cgi?DeidReimer
+
+Python:
+Original: http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass1/submission/ass1python.cgi?randomstring
+Modified: http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass1/submission/ass1pythonmod.cgi?DeidReimer
+
+C:
+Original: http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass1/submission/ass1c.cgi?randomstring
+Modified: http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass1/submission/ass1cmod.cgi?DeidReimer
