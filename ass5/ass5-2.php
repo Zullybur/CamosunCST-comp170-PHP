@@ -209,6 +209,7 @@
 
     // Fetch a row with the column labels and print
     $x=mysqli_fetch_assoc($result);
+    echo "<pre><code>\n"; print_r($x); echo "</pre></code><br>\n";
     echo "Result:";
     echo "<table border=1><tr>";
     foreach (array_keys($x) as $k) {
