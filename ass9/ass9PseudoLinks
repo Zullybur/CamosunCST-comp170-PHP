@@ -1,0 +1,57 @@
+Lab Number: 9
+Program Name: Pseudo Code and Assignment Links
+Author Name: Matthew Casiro
+Author Email: mattcasiro@gmail.com
+Submission Date: March 8 2016
+Est. Time to Complete: 2 hours
+Act. Time to Complete: TODO hours
+How to Run Program: navigate to:
+    http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass9/
+Files Required to Run: ass9Model.inc, ass9Controller.php, index.html, form.css
+
+PURPOSE:
+    Implement user input to database query and results display in
+    an MVC structure using XML/XSL and MySQL
+
+MODEL:
+    Include file with database specific information or exit
+
+    Connect to server and verify connection
+
+    Connect to database and verify connection
+
+    Query database and return result
+
+CONTROLLER:
+    Include Model and XML creation files or exit
+
+    Validate input or exit if POST is null
+
+    Sanitize input against any malicious code
+
+    Exit if forbidden terms detected
+
+    Prepare query string for submission to model
+
+    Request output from model
+
+    Convert output to XML and close query
+
+    Send to view
+
+VIEW:
+    XML (convert input array to XML):
+        Create root node
+
+        Create query node for query result
+
+        Create entry nodes as child of query containing key value pairs for one row per entry
+
+        Format output, create and return XML file
+
+    XSL (define view port layout and structure):
+        Create table to display query results
+
+        Output field names
+
+        Output column names
