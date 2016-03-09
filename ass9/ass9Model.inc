@@ -5,7 +5,7 @@
 // Author Email: mattcasiro@gmail.com
 // Submission Date: March 8 2016
 // Est. Time to Complete: 2 hours
-// Act. Time to Complete: TODO hours
+// Act. Time to Complete: 2 hours
 // Program Description: Connect to server and database
 //      and submit/return query provided by controller
 // How to Run Program: navigate to:

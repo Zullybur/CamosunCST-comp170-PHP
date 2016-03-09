@@ -5,7 +5,7 @@
 // Author Email: mattcasiro@gmail.com
 // Submission Date: March 8 2016
 // Est. Time to Complete: 2 hours
-// Act. Time to Complete: TODO hours
+// Act. Time to Complete: 2 hours
 // Program Description: Communicate between View and Model
 //      to submit and display query results
 // How to Run Program: navigate to:
@@ -13,12 +13,12 @@
 // Files Required to Run: ass9Model.inc, ass9Controller.php, index.html, form.css
 
 // Include Model and XML creation files or exit
-((require_once 'ass8Model.inc') && (require_once 'ass8ToXml.inc')) || exit("Unable to load Model or View.<br>\n");
+((require_once 'ass9Model.inc') && (require_once 'ass9ToHtml.inc')) || exit("Unable to load Model or View.<br>\n");
 // Validate input or exit if POST is null
 if(!$_POST) {
     exit();
 }
-echo "DEBUG: Post<br>\n<pre><code>"; print_r($_POST); echo "</pre></code>"; exit();
+//echo "DEBUG: Post<br>\n<pre><code>"; print_r($_POST); echo "</pre></code>"; exit();
 // Sanitize input against any malicious code
 $select = null; $from = null; $where = null; $whereCondition = null;
 $filter = '/=|<|>|!|;|\bselect\b|\bfrom\b|\bwhere\b|\blike\b|\binsert\b|'.
@@ -51,9 +51,8 @@ if($where && $whereCondition) {
 }
 // Request output from model
 $result = getQuery($queryString);
-// Convert output to XML and close query
-$xmlResult = toXml($result);
-// Send to View
-header('Content-Type: text/xml');
-echo $xmlResult;
+// Convert output to html table and return to view
+$fResult = toHtmlTable($result);
+header('Content-Type: text/html');
+echo $fResult;
 ?>

@@ -4,14 +4,14 @@ Author Name: Matthew Casiro
 Author Email: mattcasiro@gmail.com
 Submission Date: March 8 2016
 Est. Time to Complete: 2 hours
-Act. Time to Complete: TODO hours
+Act. Time to Complete: 2 hours
 How to Run Program: navigate to:
     http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass9/
 Files Required to Run: ass9Model.inc, ass9Controller.php, index.html, form.css
 
 PURPOSE:
     Implement user input to database query and results display in
-    an MVC structure using XML/XSL and MySQL
+    an MVC structure using AJAX to submit requests and display results
 
 MODEL:
     Include file with database specific information or exit
@@ -23,7 +23,7 @@ MODEL:
     Query database and return result
 
 CONTROLLER:
-    Include Model and XML creation files or exit
+    Include Model and HTML table creation files or exit
 
     Validate input or exit if POST is null
 
@@ -35,23 +35,25 @@ CONTROLLER:
 
     Request output from model
 
-    Convert output to XML and close query
-
-    Send to view
+    Convert output to html table and return to view
 
 VIEW:
-    XML (convert input array to XML):
-        Create root node
+    INDEX (form input and result output):
+        Create an XMLHttpRequest object
 
-        Create query node for query result
+        Insert response in to results area when provided
 
-        Create entry nodes as child of query containing key value pairs for one row per entry
+        Get and escape data from form
 
-        Format output, create and return XML file
+        Open the connection and create the URL as a POST
 
-    XSL (define view port layout and structure):
-        Create table to display query results
+        Set the content type so the server knows how to get this data
 
-        Output field names
+        Prepare and send the data to controller
 
-        Output column names
+    HTML Table (generate HTML encoded string to output):
+        Convert input array to html table format and return
+
+        Set column titles
+
+        Concatenate data one row at a time
