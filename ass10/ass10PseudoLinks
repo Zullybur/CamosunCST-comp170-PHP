@@ -1,0 +1,27 @@
+Lab Number: 10
+Program Name: Pseudo Code and Assignment Links
+Author Name: Matthew Casiro
+Author Email: mattcasiro@gmail.com
+Submission Date: TODO
+Est. Time to Complete: 5 hours
+Act. Time to Complete: TODO hours
+How to Run Program: navigate to:
+    http://deepblue.cs.camosun.bc.ca/~cst583/comp170/ass10/
+Files Required to Run: index.php, JungleCamo.css PowerPuff.css Argentina.css
+
+PURPOSE:
+    Adjust website appearance based on user theme selection and retain
+    selection info using cookies
+
+INDEX:
+    Script inclusion of correct css based on cookie data
+
+    Create form for user input to select theme
+
+    Send form data to php script for processing
+
+CSS FILES:
+    Generate CSS styling appropriate to the selected theme
+
+CONTROLLER:
+    Create cookie for user based on theme selection choice
