@@ -1,0 +1,25 @@
+h1 {
+    color: pink;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+h2 {
+    color: blue;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+h3 {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+body {
+    background-color: peachpuff;
+    color: black;
+}
+body b {
+    color: blue;
+}
+body i {
+    color: gray;
+}

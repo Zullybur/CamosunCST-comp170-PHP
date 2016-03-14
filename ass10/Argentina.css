@@ -1,0 +1,27 @@
+h1 {
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+h2 {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+h3 {
+    color: #51774e;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+body {
+    background-image: url("images/argentinaSmall.jpg");
+    background-size: 100%;
+    color: black;
+}
+body b {
+    font-family: "Times New Roman", Georgia, Serif;
+}
+body i {
+    font-family: "Calibri", Arial, Sans-Serif;
+}

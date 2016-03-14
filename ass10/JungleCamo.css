@@ -1,4 +1,32 @@
-/*
-Background image source:
-http://www.publicdomainpictures.net/view-image.php?image=123769&picture=green-effect-camouflage-background
-*/
+h1 {
+    color: #66563c;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+h2 {
+    color: #c7bb81;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+h3 {
+    color: #51774e;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+body {
+    font-size: 1.5em;
+    background-image: url("images/camoSmall.jpg");
+    color: black;
+}
+span {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+body b {
+    font-weight: normal;
+    font-style: italic;
+}
+body i {
+    font-weight: bold;
+    font-style: normal;
+}
